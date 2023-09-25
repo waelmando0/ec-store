@@ -1,4 +1,4 @@
-import toast from "react-hot-toast"
+import { toast } from "react-hot-toast"
 import { create } from "zustand"
 import { createJSONStorage, persist } from "zustand/middleware"
 
@@ -28,9 +28,8 @@ const useCart = create(
       },
       removeItem: (id: string) => {
         set({ items: [...get().items.filter((item) => item.id !== id)] })
-        toast.success("Item remove from the cart")
+        toast.success("Item removed from cart.")
       },
-
       removeAll: () => set({ items: [] }),
     }),
     {
