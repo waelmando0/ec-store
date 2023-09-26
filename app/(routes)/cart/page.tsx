@@ -26,7 +26,7 @@ const CartPage = () => {
 			<div className='py-10'>
 				<h1 className='text-3xl font-bold text-black'>Shopping Cart</h1>
 				<div className='mt-12 md:grid md:grid-cols-12 md:items-start gap-x-12'>
-					<div className='col-span-12 xl:col-span-7'>
+					<div className='col-span-12 lg:col-span-7'>
 						{cart.items.length === 0 && (
 							<p className='text-neutral-500'>No items added to cart.</p>
 						)}
